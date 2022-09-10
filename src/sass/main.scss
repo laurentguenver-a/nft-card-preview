@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit");
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+
+.card {
+  width: 300px;
+
+  height: auto;
+  background: hsl(216, 50%, 16%);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 20px;
+
+  img {
+    border-radius: 10px;
+    flex: 40%;
+  }
+
+  .card__info {
+    p {
+      color: hsl(215, 51%, 70%);
+    }
+
+    span {
+      color: hsl(178, 100%, 50%);
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card__info__price {
+      img {
+        margin-right: 10px;
+        vertical-align: text-top;
+      }
+    }
+
+    .card__info__timeleft {
+      color: hsl(215, 51%, 70%);
+      img {
+        margin-right: 10px;
+        vertical-align: text-top;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    padding-top: 0;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    border-radius: 10px;
+
+    .card__image {
+      flex: 40%;
+    }
+
+    .card__content {
+      flex: 60%;
+
+      h1 {
+        font-size: 35px;
+      }
+
+      h2 {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
